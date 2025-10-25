@@ -1,4 +1,4 @@
-# 🚀 Advanced Linux & DevOps Engineering Labs
+#  Advanced Linux & DevOps Engineering Labs
 
 <div align="center">
 
@@ -10,9 +10,9 @@
 
 </div>
 
-## 📋 Labs Portfolio
+##  Labs Portfolio
 
-### 🔧 [Lab 1: Linux Kernel Customization & System Automation](/lab1-kernel-customization)
+###  [Lab 1: Linux Kernel Customization & System Automation](/lab1-kernel-customization)
 **Enterprise Linux administration with custom kernel development**
 - Custom Linux Kernel 6.1.85 compilation
 - Real-time system monitoring kernel module
@@ -22,7 +22,7 @@
 
 **Certifications:** LFD103: Beginner's Guide to Linux Kernel Development
 
-### 🎯 [Lab 2: IT Support Center with Ticket System & Diagnostics]()
+###  [Lab 2: IT Support Center with Ticket System & Diagnostics]()
 **Complete IT infrastructure management system**
 - Enterprise ticketing system
 - Automated diagnostic tools
@@ -31,7 +31,7 @@
 
 **Certifications:** Google IT Support, Linux Essentials, LFS101
 
-### ⚡ [Lab 3: Enterprise CI/CD Pipeline with Complete Automation]()
+###  [Lab 3: Enterprise CI/CD Pipeline with Complete Automation]()
 **DevOps engineering and infrastructure as code**
 - End-to-end CI/CD pipeline
 - Infrastructure as Code (Terraform)
@@ -40,7 +40,7 @@
 
 **Certifications:** IBM DevOps, Google IT Automation, Python Specialization
 
-### 🔒 [Lab 4: Intrusion Detection & Vulnerability Analysis System]()
+###  [Lab 4: Intrusion Detection & Vulnerability Analysis System]()
 **Enterprise cybersecurity and threat management**
 - Real-time intrusion detection
 - Vulnerability assessment pipeline
@@ -49,7 +49,7 @@
 
 **Certifications:** Google Cybersecurity, Microsoft Cybersecurity, OWASP Top 10
 
-### 📊 [Lab 5: Full Stack Data Analytics Platform with ETL Pipeline]()
+###  [Lab 5: Full Stack Data Analytics Platform with ETL Pipeline]()
 **Data engineering and analytics infrastructure**
 - ETL pipeline development
 - Data visualization platform
@@ -67,7 +67,7 @@
 
 **Certifications:** IBM Cloud Development, Cloud Security Specializations
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 This portfolio demonstrates progressive mastery in:
 
@@ -77,7 +77,7 @@ This portfolio demonstrates progressive mastery in:
 - **Cloud Architecture** (Multi-cloud, Microservices)
 - **Full Stack Development** (Data, Analytics, Visualization)
 
-## 🛠 Technology Stack
+##  Technology Stack
 
 | Domain | Technologies |
 |--------|--------------|
@@ -87,7 +87,7 @@ This portfolio demonstrates progressive mastery in:
 | **Cloud** | AWS, Azure, GCP, Terraform, Microservices |
 | **Data** | ETL, SQL, NoSQL, Analytics, Visualization |
 
-## 🚀 Getting Started
+##  Getting Started
 
 Each lab is self-contained with its own documentation:
 
