@@ -1,0 +1,1 @@
+cmd_/home/u2204s/lab1/kernel-modules/simple_monitor.mod := printf '%s\n'   simple_monitor.o | awk '!x[$$0]++ { print("/home/u2204s/lab1/kernel-modules/"$$0) }' > /home/u2204s/lab1/kernel-modules/simple_monitor.mod

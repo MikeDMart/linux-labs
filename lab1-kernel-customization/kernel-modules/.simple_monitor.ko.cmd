@@ -1,0 +1,1 @@
+cmd_/home/u2204s/lab1/kernel-modules/simple_monitor.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/u2204s/lab1/kernel-modules/simple_monitor.ko /home/u2204s/lab1/kernel-modules/simple_monitor.o /home/u2204s/lab1/kernel-modules/simple_monitor.mod.o;  true
