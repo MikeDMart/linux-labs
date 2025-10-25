@@ -1,5 +1,4 @@
-bash
-cd /c/projects/linux-labs/lab1-kernel-customization && cat > README.md << 'EOF'
+markdown
 # Lab 1: Linux Kernel Customization & System Automation
 
 <div align="center">
@@ -52,36 +51,86 @@ lab1-kernel-customization/
 
 text
 
-## 🛠️ Quick Start
+## 🛠️ Installation & Usage
 
-### Prerequisites
-- Ubuntu 22.04 LTS (or similar)
-- 20GB free disk space  
-- 2GB+ RAM
-
-### 1. System Setup & Optimization
+### 📋 Prerequisites
 ```bash
-sudo ./scripts/system-setup.sh
-./scripts/system-info.sh
-2. Kernel Compilation
+# Install kernel compilation dependencies
+sudo apt update
+sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev git
+
+# Verify system resources
+free -h
+df -h
+1. System Setup & Optimization
 bash
+# Make scripts executable
+chmod +x scripts/*.sh
+
+# Run system setup and optimization
+sudo ./scripts/system-setup.sh
+
+# Verify system information
+./scripts/system-info.sh
+2. Kernel Compilation & Installation
+bash
+# Compile and install custom kernel
 sudo ./scripts/kernel-build.sh
+
+# Reboot into new kernel
 sudo reboot
-uname -r  # Verify: 6.1.85-lab1-custom
+
+# Verify custom kernel version
+uname -r  # Should show: 6.1.85-lab1-custom
 3. Kernel Module Development
 bash
+# Navigate to kernel modules
 cd kernel-modules
+
+# Compile the kernel module
 make
+
+# Load the module
 sudo insmod simple_monitor.ko
+
+# Verify module is loaded
+lsmod | grep simple_monitor
+
+# View system monitoring information
 cat /proc/simple_monitor
+
+# Unload module (when needed)
+sudo rmmod simple_monitor
 4. Automation & Monitoring
 bash
+# Run performance monitoring
 python3 scripts/performance-monitor.py
-sudo ./scripts/backup-system.sh
-sudo ./scripts/security-hardening.sh
-<div align="center">
-Built with ❤️ and too much coffee
 
+# Execute system backup
+sudo ./scripts/backup-system.sh
+
+# Apply security hardening
+sudo ./scripts/security-hardening.sh
+🔧 Troubleshooting
+bash
+# Check kernel messages for errors
+dmesg | tail -20
+
+# Verify kernel configuration
+cat /boot/config-$(uname -r) | grep CONFIG_LOCALVERSION
+
+# Check module dependencies
+modinfo simple_monitor.ko
+📝 Notes
+Ensure at least 20GB free disk space for kernel compilation
+
+Backup important data before kernel installation
+
+Some operations require root privileges (sudo)
+
+Reboot required after kernel installation
+
+<div align="center"> **Built with ❤️ and too much coffee**
 "The kernel is the heart of the system. Understand it, and you understand everything."
 
-</div> EOF ```
+</div> ```
