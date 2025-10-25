@@ -1,4 +1,3 @@
-markdown
 # Lab 1: Linux Kernel Customization & System Automation
 
 <div align="center">
@@ -39,7 +38,7 @@ Performance Optimizations → Network Stack + Memory Management
 ↓
 Security Hardening → Access Control + Network Security
 
-text
+
 
 ## 📁 Project Structure
 lab1-kernel-customization/
@@ -49,7 +48,7 @@ lab1-kernel-customization/
 ├── screenshots/ # System evidence & outputs
 └── examples/ # Sample outputs & configurations
 
-text
+
 
 ## 🛠️ Installation & Usage
 
