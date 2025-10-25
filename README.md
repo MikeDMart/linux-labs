@@ -58,7 +58,7 @@
 
 **Certifications:** IBM Full Stack, Google Data Analytics, IBM Data Engineering
 
-### ☁️ [Lab 6: Multi-Cloud Architecture with Terraform & Microservices]()
+###  [Lab 6: Multi-Cloud Architecture with Terraform & Microservices]()
 **Cloud-native infrastructure and microservices**
 - Multi-cloud deployment (AWS, Azure, GCP)
 - Microservices architecture
