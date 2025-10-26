@@ -1,11 +1,13 @@
-# 🚀 IT Support Center - Complete Technical Support Management System
+# 🚀 IT Support Center Lab - Complete Technical Support Management System
 
 <div align="center">
 
-![Status](https://img.shields.io/badge/status-production%20ready-brightgreen?style=for-the-badge)
-![Python](https://img.shields.io/badge/python-3.10+-blue?style=for-the-badge&logo=python)
-![PostgreSQL](https://img.shields.io/badge/postgresql-14+-316192?style=for-the-badge&logo=postgresql)
-![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/STATUS-PRODUCTION_READY-success?style=for-the-badge&logo=checkmarx&logoColor=white)
+![Python](https://img.shields.io/badge/PYTHON-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/POSTGRESQL-14+-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![License](https://img.shields.io/badge/LICENSE-MIT-00ADD8?style=for-the-badge&logo=opensourceinitiative&logoColor=white)
+![Platform](https://img.shields.io/badge/PLATFORM-LINUX-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![CLI](https://img.shields.io/badge/CLI-RICH-FF6188?style=for-the-badge&logo=windowsterminal&logoColor=white)
 
 **Enterprise ticketing system with real-time hardware diagnostics**
 
