@@ -9,19 +9,26 @@
 
 **Complete Linux system administration with custom kernel compilation and enterprise automation**
 
-[🎯 Overview](#-overview) • [✨ Features](#-features) • [🛠 Prerequisites](#-prerequisites) • [🚀 Quick Start](#-quick-installation) • [📖 Setup Guide](#-detailed-setup) • [🎮 Usage](#-usage) • [📁 Structure](#-project-structure) • [🐛 Troubleshooting](#-troubleshooting)
+</div>
 
----
+## 📋 Table of Contents
+
+<div align="center">
+
+[![Overview](https://img.shields.io/badge/📋-Overview-blue?style=for-the-badge)](#-overview)
+[![Features](https://img.shields.io/badge/✨-Features-green?style=for-the-badge)](#-features)
+[![Prerequisites](https://img.shields.io/badge/🛠-Prerequisites-orange?style=for-the-badge)](#-prerequisites)
+[![Installation](https://img.shields.io/badge/🚀-Quick_Installation-red?style=for-the-badge)](#-quick-installation)
+[![Setup](https://img.shields.io/badge/📖-Detailed_Setup-purple?style=for-the-badge)](#-detailed-setup)
+[![Usage](https://img.shields.io/badge/🎮-Usage-yellow?style=for-the-badge)](#-usage)
+[![Structure](https://img.shields.io/badge/📁-Project_Structure-cyan?style=for-the-badge)](#-project-structure)
+[![Troubleshooting](https://img.shields.io/badge/🐛-Troubleshooting-lightgrey?style=for-the-badge)](#-troubleshooting)
 
 </div>
 
 ## 🎯 Overview
 
 This lab provides a complete enterprise-grade Linux system administration solution featuring custom kernel compilation, real-time monitoring, security hardening, and comprehensive automation.
-
-> 💡 **Perfect for**: System administrators, DevOps engineers, and Linux enthusiasts looking to master kernel customization and enterprise automation.
-
----
 
 ## ✨ Features
 
@@ -43,8 +50,6 @@ This lab provides a complete enterprise-grade Linux system administration soluti
 - **Intrusion detection** with fail2ban
 - **System auditing** with auditd
 
----
-
 ## 🛠 Prerequisites
 
 ### System Requirements
@@ -58,8 +63,6 @@ This lab provides a complete enterprise-grade Linux system administration soluti
 - Understanding of shell scripting
 - Basic networking concepts
 - Familiarity with system administration tasks
-
----
 
 ## 🚀 Quick Installation
 
@@ -84,14 +87,9 @@ sudo ./scripts/system-setup.sh
 sudo reboot
 ```
 
----
-
 ## 📖 Detailed Setup
 
 ### Phase 1: Base System Configuration (2 hours)
-
-<details>
-<summary><b>🔍 Click to expand Phase 1 details</b></summary>
 
 #### Step 1.1: System Preparation
 ```bash
@@ -128,14 +126,7 @@ sudo ufw status
 ./scripts/system-info.sh
 ```
 
-</details>
-
----
-
 ### Phase 2: Custom Kernel Compilation (4 hours)
-
-<details>
-<summary><b>🔍 Click to expand Phase 2 details</b></summary>
 
 #### Step 2.1: Install Build Dependencies
 ```bash
@@ -164,14 +155,7 @@ uname -r
 # Should show: 6.6.8-custom
 ```
 
-</details>
-
----
-
 ### Phase 3: Kernel Module Development
-
-<details>
-<summary><b>🔍 Click to expand Phase 3 details</b></summary>
 
 #### Step 3.1: Compile Monitoring Module
 ```bash
@@ -202,14 +186,7 @@ cat /proc/simple_monitor
 #   Usage:     X%
 ```
 
-</details>
-
----
-
 ### Phase 4: Automation & Monitoring Setup (3 hours)
-
-<details>
-<summary><b>🔍 Click to expand Phase 4 details</b></summary>
 
 #### Step 4.1: Configure Backup System
 ```bash
@@ -241,10 +218,6 @@ sudo ./scripts/security-hardening.sh
 # - Configure AppArmor profiles
 # - Set secure file permissions
 ```
-
-</details>
-
----
 
 ## 🎮 Usage
 
@@ -299,8 +272,6 @@ sudo crontab -e
 # 0 4 * * 0 /opt/scripts/security-hardening.sh --quick
 ```
 
----
-
 ## 📁 Project Structure
 
 ```text
@@ -325,8 +296,6 @@ lab1-kernel-customization/
     ├── performance-dashboard.png
     └── kernel-module-output.png
 ```
-
----
 
 ## 🐛 Troubleshooting
 
@@ -375,8 +344,6 @@ python3 scripts/performance-monitor.py --verbose
 - Security logs: `/var/log/auth.log`
 - Kernel logs: `dmesg`
 
----
-
 ## 🔧 Maintenance
 
 ### Regular Tasks
@@ -397,8 +364,6 @@ sudo make install
 sudo update-grub
 ```
 
----
-
 ## 📞 Support
 
 ### Documentation
@@ -415,17 +380,10 @@ sudo update-grub
 
 <div align="center">
 
-### 💬 Need Help?
-
-Check the [troubleshooting section](#-troubleshooting) or create an issue in the repository.
-
----
+Need help? Check the [troubleshooting section](#-troubleshooting) or create an issue in the repository.
 
 **Built with ❤️ for the Linux community**
 
-> *"The Linux philosophy is 'Laugh in the face of danger'. Oops. Wrong One. 'Do it yourself'. Yes, that's it."*  
-> — **Linus Torvalds**
-
-⭐ **Star this repo** if you find it helpful!
+*"The Linux philosophy is 'Laugh in the face of danger'. Oops. Wrong One. 'Do it yourself'. Yes, that's it." - Linus Torvalds*
 
 </div>
