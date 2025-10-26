@@ -74,10 +74,11 @@ sudo ./scripts/system-setup.sh
 4. Reboot System
 bash
 sudo reboot
+```
 📖 Detailed Setup
 Phase 1: Base System Configuration (2 hours)
 Step 1.1: System Preparation
-bash
+```bash
 # Update system and install essential tools
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y build-essential git vim curl wget \
@@ -179,10 +180,11 @@ sudo ./scripts/security-hardening.sh
 # - Disable unnecessary services
 # - Configure AppArmor profiles
 # - Set secure file permissions
+```
 🎮 Usage
 Daily Operations
 System Monitoring
-bash
+```bash
 # Real-time performance dashboard
 python3 scripts/performance-monitor.py
 
@@ -221,6 +223,7 @@ sudo crontab -e
 # 0 2 * * * /opt/scripts/backup-system.sh
 # */5 * * * * /opt/scripts/performance-monitor.py --daemon
 # 0 4 * * 0 /opt/scripts/security-hardening.sh --quick
+```
 📁 Project Structure
 text
 lab1-kernel-customization/
@@ -243,10 +246,12 @@ lab1-kernel-customization/
 └── screenshots/
     ├── performance-dashboard.png
     └── kernel-module-output.png
+```
+```
 🐛 Troubleshooting
 Common Issues
 Kernel Compilation Fails
-bash
+```bash
 # Check available disk space
 df -h /usr/src
 
@@ -284,7 +289,7 @@ Backup logs: /var/log/custom/backup-*.log
 Security logs: /var/log/auth.log
 
 Kernel logs: dmesg
-
+```
 🔧 Maintenance
 Regular Tasks
 Weekly: Review backup logs and verify integrity
@@ -296,7 +301,7 @@ Quarterly: Review and update kernel configuration
 Annually: Perform comprehensive security audit
 
 Update Procedures
-bash
+```bash
 # Update kernel sources
 cd /usr/src/linux-6.6.8
 git pull origin main
@@ -305,6 +310,7 @@ make -j$(nproc)
 sudo make modules_install
 sudo make install
 sudo update-grub
+```
 📞 Support
 Documentation
 Kernel Documentation
@@ -327,4 +333,4 @@ Built with ❤️ for the Linux community
 
 "The Linux philosophy is 'Laugh in the face of danger'. Oops. Wrong One. 'Do it yourself'. Yes, that's it." - Linus Torvalds
 
-</div> ```
+</div>```
