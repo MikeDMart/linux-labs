@@ -1,0 +1,22 @@
+@"
+#!/bin/bash
+echo '🚀 Configurando IT Support System...'
+
+# Instalar dependencias del sistema
+sudo apt update
+sudo apt install postgresql postgresql-contrib python3-pip -y
+
+# Configurar base de datos
+sudo -u postgres psql -c 'CREATE DATABASE it_support;'
+sudo -u postgres psql -c 'CREATE USER itsupport_user WITH PASSWORD '\''12345678'\'';'
+sudo -u postgres psql -c 'GRANT ALL PRIVILEGES ON DATABASE it_support TO itsupport_user;'
+
+# Ejecutar esquema de BD
+sudo -u postgres psql -d it_support -f database/it_support.sql
+
+# Instalar dependencias Python
+pip3 install -r requirements.txt
+
+echo '✅ Configuración completada'
+echo '🎯 Ejecutar: python3 ticket_system/ticket_manager.py list'
+"@ | Out-File -FilePath "setup.sh" -Encoding UTF8

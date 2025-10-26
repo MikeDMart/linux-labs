@@ -1,0 +1,167 @@
+{
+  "timestamp": "2025-10-26T11:40:15.279937",
+  "hostname": "u2204s",
+  "system_info": {
+    "platform": "Linux",
+    "platform_version": "#1 SMP PREEMPT_DYNAMIC Fri Oct 24 20:14:18 CST 2025",
+    "architecture": "64bit",
+    "processor": "x86_64",
+    "hostname": "u2204s",
+    "ip_address": "127.0.1.1",
+    "boot_time": "2025-10-24 21:23:16"
+  },
+  "tests": {
+    "cpu": {
+      "status": "PASS",
+      "info": {
+        "physical_cores": 4,
+        "logical_cores": 4,
+        "usage_percent": 0.2,
+        "per_cpu_usage": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "load_average": [
+          0.0,
+          0.0068359375,
+          0.0
+        ],
+        "max_frequency": "1500.00 MHz",
+        "current_frequency": "0.80 MHz",
+        "min_frequency": "800.00 MHz"
+      },
+      "issues": [],
+      "warnings": []
+    },
+    "memory": {
+      "status": "PASS",
+      "info": {
+        "total_gb": 7.23,
+        "available_gb": 6.71,
+        "used_gb": 0.25,
+        "percent_used": 7.3,
+        "swap_total_gb": 4.0,
+        "swap_used_gb": 0.0,
+        "swap_percent": 0.0
+      },
+      "issues": [],
+      "warnings": []
+    },
+    "disk": {
+      "status": "FAIL",
+      "info": [
+        {
+          "device": "/dev/mapper/ubuntu--vg-ubuntu--lv",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "total_gb": 80.98,
+          "used_gb": 35.71,
+          "free_gb": 41.12,
+          "percent_used": 46.5
+        },
+        {
+          "device": "/dev/loop0",
+          "mountpoint": "/snap/core20/2318",
+          "fstype": "squashfs",
+          "total_gb": 0.06,
+          "used_gb": 0.06,
+          "free_gb": 0.0,
+          "percent_used": 100.0
+        },
+        {
+          "device": "/dev/loop1",
+          "mountpoint": "/snap/core20/2669",
+          "fstype": "squashfs",
+          "total_gb": 0.06,
+          "used_gb": 0.06,
+          "free_gb": 0.0,
+          "percent_used": 100.0
+        },
+        {
+          "device": "/dev/loop2",
+          "mountpoint": "/snap/lxd/29351",
+          "fstype": "squashfs",
+          "total_gb": 0.09,
+          "used_gb": 0.09,
+          "free_gb": 0.0,
+          "percent_used": 100.0
+        },
+        {
+          "device": "/dev/loop3",
+          "mountpoint": "/snap/lxd/35819",
+          "fstype": "squashfs",
+          "total_gb": 0.09,
+          "used_gb": 0.09,
+          "free_gb": 0.0,
+          "percent_used": 100.0
+        },
+        {
+          "device": "/dev/loop4",
+          "mountpoint": "/snap/snapd/21759",
+          "fstype": "squashfs",
+          "total_gb": 0.04,
+          "used_gb": 0.04,
+          "free_gb": 0.0,
+          "percent_used": 100.0
+        },
+        {
+          "device": "/dev/sda2",
+          "mountpoint": "/boot",
+          "fstype": "ext4",
+          "total_gb": 1.9,
+          "used_gb": 0.87,
+          "free_gb": 0.92,
+          "percent_used": 48.5
+        },
+        {
+          "device": "/dev/loop5",
+          "mountpoint": "/snap/snapd/25577",
+          "fstype": "squashfs",
+          "total_gb": 0.05,
+          "used_gb": 0.05,
+          "free_gb": 0.0,
+          "percent_used": 100.0
+        },
+        {
+          "io_stats": {
+            "read_count": 36285,
+            "write_count": 278663,
+            "read_bytes_gb": 1.72,
+            "write_bytes_gb": 5.27
+          }
+        }
+      ],
+      "issues": [
+        "CRITICAL: Disk /snap/core20/2318 at 100.0% capacity",
+        "CRITICAL: Disk /snap/core20/2669 at 100.0% capacity",
+        "CRITICAL: Disk /snap/lxd/29351 at 100.0% capacity",
+        "CRITICAL: Disk /snap/lxd/35819 at 100.0% capacity",
+        "CRITICAL: Disk /snap/snapd/21759 at 100.0% capacity",
+        "CRITICAL: Disk /snap/snapd/25577 at 100.0% capacity"
+      ],
+      "warnings": []
+    },
+    "network": {
+      "status": "PASS",
+      "info": {
+        "bytes_sent_mb": 43.62,
+        "bytes_recv_mb": 123.97,
+        "total_connections": 14,
+        "dns_resolution": "WORKING"
+      },
+      "issues": [],
+      "warnings": []
+    }
+  },
+  "alerts": [
+    "CRITICAL: Disk /snap/core20/2318 at 100.0% capacity",
+    "CRITICAL: Disk /snap/core20/2669 at 100.0% capacity",
+    "CRITICAL: Disk /snap/lxd/29351 at 100.0% capacity",
+    "CRITICAL: Disk /snap/lxd/35819 at 100.0% capacity",
+    "CRITICAL: Disk /snap/snapd/21759 at 100.0% capacity",
+    "CRITICAL: Disk /snap/snapd/25577 at 100.0% capacity"
+  ],
+  "overall_status": "CRITICAL"
+}

@@ -1,226 +1,211 @@
-# Lab 2: Centro de Soporte IT Completo con Sistema de Tickets y Diagnóstico
+🛠️ IT Support Management System
+📋 Descripción
+Sistema completo de gestión de soporte técnico con Python y PostgreSQL que permite gestionar tickets, diagnosticar hardware y generar reportes en tiempo real.
 
-<div align="center">
+🚀 Características Principales
+✅ Gestión completa de tickets con categorías y prioridades
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Networking](https://img.shields.io/badge/Networking-0078D4?style=for-the-badge&logo=cisco&logoColor=white)
-![Status](https://img.shields.io/badge/Status-In_Development-yellow?style=for-the-badge)
-![Level](https://img.shields.io/badge/Level-Intermediate-orange?style=for-the-badge)
+✅ Diagnóstico automático de hardware integrado
 
-**Complete IT support infrastructure with ticketing system and automated diagnostics**
+✅ Base de datos PostgreSQL optimizada para soporte técnico
 
-</div>
+✅ Interfaz visual profesional con librería Rich
 
-## 📋 Table of Contents
+✅ Reportes y estadísticas en tiempo real
 
-<div align="center">
+✅ Sistema de asignación a técnicos especializados
 
-[![Overview](https://img.shields.io/badge/📋-Overview-blue?style=for-the-badge)](#-overview)
-[![Features](https://img.shields.io/badge/✨-Features-green?style=for-the-badge)](#-features)
-[![Prerequisites](https://img.shields.io/badge/🛠-Prerequisites-orange?style=for-the-badge)](#-prerequisites)
-[![Roadmap](https://img.shields.io/badge/🗺️-Development_Roadmap-purple?style=for-the-badge)](#️-development-roadmap)
-[![Certifications](https://img.shields.io/badge/🎓-Certifications-red?style=for-the-badge)](#-aligned-certifications)
+✅ Generación automática de números de ticket únicos
 
-</div>
+🛠️ Stack Tecnológico
+Python 3.10+ - Lógica de negocio y automatización
 
-## 🎯 Overview
+PostgreSQL - Base de datos robusta y escalable
 
-This lab provides a complete IT support center implementation featuring a ticketing system, automated hardware and network diagnostics, remote support capabilities, and comprehensive documentation management. Build the foundation for professional IT support operations.
+psutil - Diagnóstico avanzado de hardware
 
-> 🚧 **Status**: This lab is currently in development. Check back soon for the complete implementation!
+Rich - Interfaz de consola visualmente atractiva
 
-## ✨ Features
+psycopg2 - Conector PostgreSQL para Python
 
-### 🎫 Ticketing System
-- **Ticket management** with priority and status tracking
-- **User portal** for ticket submission and tracking
-- **Assignment workflow** to support technicians
-- **SLA tracking** and escalation procedures
-- **Knowledge base** integration
+📦 Estructura del Proyecto
+text
+it-support-lab/
+├── ticket_system/
+│   ├── ticket_manager.py      # Sistema principal de gestión
+│   ├── requirements.txt       # Dependencias del proyecto
+│   └── database/
+│       └── it_support.sql     # Esquema de base de datos
+├── docs/
+│   └── user_manual.md         # Documentación técnica
+└── scripts/
+    └── setup.py              # Scripts de instalación
+⚙️ Instalación y Configuración
+1. Configurar PostgreSQL
+bash
+# Acceder a PostgreSQL y crear la base de datos
+sudo -u postgres psql -f database/it_support.sql
 
-### 🔧 Hardware Diagnostics
-- **Automated hardware testing** scripts
-- **System health monitoring** (CPU, RAM, disk, temperature)
-- **Hardware inventory** management
-- **Diagnostic report generation**
-- **Component failure prediction**
+# O ejecutar manualmente:
+sudo -u postgres psql
+CREATE DATABASE it_support;
+\c it_support;
+\i database/it_support.sql
+2. Instalar Dependencias
+bash
+# Navegar al directorio del proyecto
+cd ticket_system
 
-### 🌐 Network Troubleshooting
-- **Network connectivity testing** automation
-- **DNS and DHCP diagnostics**
-- **Bandwidth monitoring** and analysis
-- **Network device management**
-- **Wireless troubleshooting** tools
+# Instalar requerimientos
+pip install -r requirements.txt
 
-### 📚 Documentation & Knowledge Base
-- **Searchable documentation** system
-- **Common issue solutions** database
-- **Step-by-step guides** for common problems
-- **Video tutorial integration**
-- **Best practices** documentation
+# Dependencias principales:
+# psutil==5.9.0
+# rich==13.0.0
+# psycopg2-binary==2.9.5
+3. Configurar Conexión a BD
+python
+# En ticket_manager.py, configurar conexión:
+DATABASE_CONFIG = {
+    'host': 'localhost',
+    'database': 'it_support',
+    'user': 'postgres',
+    'password': 'tu_password'
+}
+🎯 Uso del Sistema
+Comandos Principales
+bash
+# Crear nuevo ticket
+python3 ticket_manager.py create "Título" "Descripción" categoria prioridad id_solicitante
 
-### 🖥️ Remote Support Tools
-- **Remote desktop access** configuration
-- **SSH management** for server support
-- **File transfer** capabilities
-- **Screen sharing** integration
-- **Remote diagnostics** execution
+# Listar todos los tickets
+python3 ticket_manager.py list
 
-## 🛠 Prerequisites
+# Ver estadísticas
+python3 ticket_manager.py stats
 
-### System Requirements
-- **Ubuntu Server 22.04 LTS** or **Debian 12**
-- **Minimum**: 2 CPU cores, 4GB RAM, 30GB disk space
-- **Recommended**: 4+ CPU cores, 8GB RAM, 50GB SSD
-- **Network**: Stable connection for remote support
-- **Additional**: Test hardware for diagnostic tool development
+# Asignar ticket a técnico
+python3 ticket_manager.py assign <ticket_id> <technician_id>
 
-### Required Knowledge
-- Basic Linux command line proficiency
-- Understanding of computer hardware components
-- Basic networking concepts (TCP/IP, DNS, DHCP)
-- Customer service communication skills
-- Basic troubleshooting methodology
+# Ver detalles de ticket
+python3 ticket_manager.py get <ticket_id>
 
-### Recommended Background
-- CompTIA A+ or equivalent knowledge
-- Experience with help desk operations
-- Familiarity with common operating systems (Windows, macOS, Linux)
-- Basic scripting knowledge (bash, Python)
+# Diagnosticar hardware
+python3 ticket_manager.py diagnose
+Ejemplos de Uso
+bash
+# Crear ticket crítico de hardware
+python3 ticket_manager.py create "Monitor no funciona" "El monitor no enciende" hardware critical 1
 
-## 🗺️ Development Roadmap
+# Crear ticket de software
+python3 ticket_manager.py create "Software lento" "La PC va muy lenta" software medium 2
 
-### Phase 1: Ticketing System Setup
-- [ ] Database design for ticket management
-- [ ] Web interface development
-- [ ] User authentication system
-- [ ] Ticket workflow implementation
-- [ ] Email notification system
+# Asignar ticket al técnico
+python3 ticket_manager.py assign 1 2
 
-### Phase 2: Hardware Diagnostics
-- [ ] System information gathering scripts
-- [ ] Hardware health monitoring tools
-- [ ] Automated diagnostic routines
-- [ ] Report generation system
-- [ ] Hardware inventory database
+# Generar reporte de estadísticas
+python3 ticket_manager.py stats
+📊 Categorías y Prioridades Soportadas
+🎯 Categorías
+hardware - Problemas de componentes físicos
 
-### Phase 3: Network Tools
-- [ ] Network connectivity testing suite
-- [ ] DNS/DHCP troubleshooting tools
-- [ ] Bandwidth monitoring implementation
-- [ ] Network mapping utilities
-- [ ] Wireless diagnostics toolkit
+software - Issues de aplicaciones y SO
 
-### Phase 4: Documentation System
-- [ ] Knowledge base platform setup
-- [ ] Article creation and management
-- [ ] Search functionality implementation
-- [ ] User guides and tutorials
-- [ ] Video content integration
+network - Problemas de conectividad
 
-### Phase 5: Remote Support
-- [ ] Remote access tools configuration
-- [ ] Security hardening for remote connections
-- [ ] File transfer system
-- [ ] Remote diagnostics automation
-- [ ] Session logging and recording
+security - Incidencias de seguridad
 
-## 🎓 Aligned Certifications
+🚨 Niveles de Prioridad
+critical - Crítico (resolución inmediata)
 
-This lab prepares you for:
+high - Alto (máximo 4 horas)
 
-- 💻 **Google IT Support Professional Certificate**
-- 🔧 **Computer Hardware Basics** (subconjunto de IT Support)
-- 🌐 **Networking Basics**
+medium - Medio (24 horas)
 
-### Recommended External Certifications
-- **CompTIA A+**: Core hardware and software support
-- **CompTIA Network+**: Networking fundamentals
-- **HDI Support Center Analyst**: Help desk best practices
-- **ITIL Foundation**: IT service management
+low - Bajo (48-72 horas)
 
-## 📚 What You'll Learn
+🔧 Funciones de Diagnóstico
+El sistema incluye diagnóstico automático de:
 
-### IT Support Fundamentals
-- Troubleshooting methodology and best practices
-- Customer service and communication skills
-- Ticket management and prioritization
-- Documentation and knowledge sharing
+✅ Uso de CPU y memoria
 
-### Hardware Skills
-- Computer hardware components and functionality
-- Diagnostic tools and techniques
-- Hardware failure analysis
-- Component replacement procedures
+✅ Estado del disco duro
 
-### Network Troubleshooting
-- TCP/IP fundamentals and troubleshooting
-- DNS and DHCP configuration
-- Network device management
-- Wireless networking basics
+✅ Temperatura del sistema
 
-### Tools & Technologies
-- **Ticketing**: osTicket, Request Tracker, GLPI
-- **Monitoring**: Nagios, Zabbix, Prometheus
-- **Diagnostics**: smartmontools, memtest, stress-ng
-- **Network**: ping, traceroute, nmap, Wireshark
-- **Remote**: SSH, VNC, RDP, TeamViewer alternatives
+✅ Procesos críticos
 
-## 🚀 Coming Soon
+✅ Conectividad de red
 
-This lab is under active development. Expected completion: **Q4 2025**
+📈 Reportes y Métricas
+Estadísticas Generadas
+Total de tickets por estado
 
-### Planned Components
-- Complete ticketing system implementation
-- Hardware diagnostic script library
-- Network troubleshooting toolkit
-- Knowledge base platform
-- Remote support infrastructure setup guide
-- Best practices documentation
-- Real-world support scenarios
+Distribución por prioridad
 
-## 📞 Common Support Scenarios
+Métricas por categoría
 
-This lab will cover practical solutions for:
+Tiempos promedio de resolución
 
-- **Hardware Issues**: System won't boot, overheating, component failures
-- **Network Problems**: No internet connection, slow speeds, DNS issues
-- **Software Troubles**: Application crashes, updates, installations
-- **Performance**: Slow system, high resource usage, optimization
-- **User Support**: Password resets, account management, access issues
+Carga de trabajo por técnico
 
-## 🎯 Learning Outcomes
+Ejemplo de Salida Estadística
+text
+📊 Total Tickets: 15
+📈 By Status: {'open': 5, 'in_progress': 3, 'resolved': 7}
+🚨 By Priority: {'critical': 2, 'high': 4, 'medium': 6, 'low': 3}
+📁 By Category: {'hardware': 6, 'software': 5, 'network': 4}
+🎨 Interfaz Visual
+Características de la UI
+Tablas formateadas con colores y bordes
 
-After completing this lab, you will be able to:
+Paneles informativos para detalles
 
-- ✅ Set up and manage an IT support ticketing system
-- ✅ Diagnose and troubleshoot hardware issues
-- ✅ Perform network troubleshooting and analysis
-- ✅ Provide effective remote technical support
-- ✅ Create and maintain technical documentation
-- ✅ Follow IT support best practices and procedures
-- ✅ Manage IT assets and inventory
-- ✅ Implement service level agreements (SLAs)
+Iconos y emojis para mejor legibilidad
 
-## 📞 Stay Updated
+Colores por prioridad (rojo=crítico, amarillo=medio)
 
-⭐ **Star this repository** to get notified when the lab is released!
+Progress bars para métricas
 
-🔔 **Watch the repository** for development updates
+🔒 Seguridad y Validación
+Validación de entrada de datos
 
-💬 **Join discussions** in the Issues section
+Prevención de SQL injection
 
----
+Manejo seguro de contraseñas
 
-<div align="center">
+Logs de auditoría de operaciones
 
-**Part of the [Linux Labs](../) project**
+📋 Próximas Características
+API REST para integraciones
 
-[← Back to Main Repository](../) | [View Lab 1](../lab1-kernel-customization/) | [View Lab 3](../lab3-cicd-pipeline/)
+Panel web administrativo
 
-Built with ❤️ for the IT support community
+Notificaciones por email
 
-*"The most valuable commodity I know of is information."* - **Gordon Gekko**
+App móvil para técnicos
 
-</div>
+Sistema de knowledge base
+
+Reportes PDF automáticos
+
+🆘 Soporte y Troubleshooting
+Problemas Comunes
+bash
+# Error de conexión a BD
+Verificar: servicio PostgreSQL ejecutándose
+
+# Módulos no encontrados
+pip install --upgrade -r requirements.txt
+
+# Permisos insuficientes
+sudo systemctl start postgresql
+📞 Soporte Técnico
+Para issues y soporte técnico del sistema, crear un ticket en:
+python3 ticket_manager.py create "Soporte Sistema" "Descripción del problema" software high 1
+
+¿Listo para optimizar tu flujo de soporte técnico? 🚀
+
+bash
+# ¡Iniciar el sistema ahora!
+cd ticket_system && python3 ticket_manager.py
