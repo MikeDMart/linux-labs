@@ -1,389 +1,449 @@
-# Lab 1: Enterprise Linux System with Kernel Customization & Automation
+# 🐧 Linux Labs - Professional System Administration & DevOps Training
 
 <div align="center">
 
-![Kernel Version](https://img.shields.io/badge/Kernel-6.6.8_Custom-orange)
-![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen)
-![Level](https://img.shields.io/badge/Level-Advanced-blue)
-![License](https://img.shields.io/badge/License-GPLv3-blue)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![Labs](https://img.shields.io/badge/Labs-6-blue?style=for-the-badge)
+![Level](https://img.shields.io/badge/Level-Beginner_to_Advanced-orange?style=for-the-badge)
 
-**Complete Linux system administration with custom kernel compilation and enterprise automation**
+**Complete hands-on Linux training path from basics to enterprise architecture**
 
 </div>
 
-## 📋 Table of Contents
+## 📋 Navigation
 
 <div align="center">
 
-[![Overview](https://img.shields.io/badge/📋-Overview-blue?style=for-the-badge)](#-overview)
-[![Features](https://img.shields.io/badge/✨-Features-green?style=for-the-badge)](#-features)
-[![Prerequisites](https://img.shields.io/badge/🛠-Prerequisites-orange?style=for-the-badge)](#-prerequisites)
-[![Installation](https://img.shields.io/badge/🚀-Quick_Installation-red?style=for-the-badge)](#-quick-installation)
-[![Setup](https://img.shields.io/badge/📖-Detailed_Setup-purple?style=for-the-badge)](#-detailed-setup)
-[![Usage](https://img.shields.io/badge/🎮-Usage-yellow?style=for-the-badge)](#-usage)
-[![Structure](https://img.shields.io/badge/📁-Project_Structure-cyan?style=for-the-badge)](#-project-structure)
-[![Troubleshooting](https://img.shields.io/badge/🐛-Troubleshooting-lightgrey?style=for-the-badge)](#-troubleshooting)
+[![About](https://img.shields.io/badge/📖-About-blue?style=for-the-badge)](#-about-this-repository)
+[![Labs](https://img.shields.io/badge/🧪-Labs_Overview-green?style=for-the-badge)](#-labs-overview)
+[![Getting Started](https://img.shields.io/badge/🚀-Getting_Started-red?style=for-the-badge)](#-getting-started)
+[![Prerequisites](https://img.shields.io/badge/⚙️-Prerequisites-orange?style=for-the-badge)](#️-prerequisites)
+[![Roadmap](https://img.shields.io/badge/🗺️-Learning_Roadmap-purple?style=for-the-badge)](#️-learning-roadmap)
+[![Resources](https://img.shields.io/badge/📚-Resources-yellow?style=for-the-badge)](#-additional-resources)
+[![Contributing](https://img.shields.io/badge/🤝-Contributing-cyan?style=for-the-badge)](#-contributing)
 
 </div>
 
-## 🎯 Overview
+---
 
-This lab provides a complete enterprise-grade Linux system administration solution featuring custom kernel compilation, real-time monitoring, security hardening, and comprehensive automation.
+## 📖 About This Repository
 
-## ✨ Features
+This repository contains a comprehensive collection of **6 professional Linux labs** designed to take you from foundational Linux administration to advanced enterprise architectures. Each lab is a complete, hands-on project that builds real-world skills used by DevOps engineers, system administrators, and cloud architects.
 
-### 🔧 Core System
-- **Custom Linux Kernel 6.6.8** compiled from source
-- **Kernel module development** for system monitoring
-- **Performance optimization** with BBR and custom sysctl tuning
-- **Security hardening** with fail2ban, auditd, and AppArmor
+### 🎯 What You'll Learn
+- **System Administration**: Custom kernel compilation, automation, monitoring
+- **IT Support**: Hardware troubleshooting, networking, ticketing systems
+- **DevOps Pipeline**: CI/CD automation with Python and enterprise tools
+- **Cybersecurity**: Intrusion detection, vulnerability analysis, security hardening
+- **Data Engineering**: Full-stack ETL pipelines with modern analytics platforms
+- **Cloud Architecture**: Multi-cloud infrastructure with Terraform and microservices
 
-### ⚡ Automation & Monitoring
-- **Real-time performance monitoring** with Python dashboard
-- **Automated backup system** with rotation and verification
-- **System setup automation** with bash scripts
-- **Comprehensive logging** and alerting
+### 💼 Aligned with Industry Certifications
+Each lab maps to professional certifications from:
+- 🎓 **Google**: IT Support, IT Automation, Cybersecurity, Data Analytics
+- 🔷 **IBM**: DevOps, Cloud, Full Stack Development, Data Engineering
+- 🟦 **Microsoft**: Azure Security, Cybersecurity Analyst
+- 🐍 **Python Institute**: Python Programming Certifications
+- 🔒 **(ISC)²**: CISSP preparation materials
+- ☁️ **Linux Foundation**: LFD103, LFCA, CKA preparation
 
-### 🔒 Security
-- **SSH hardening** with key-based authentication only
-- **Firewall configuration** with UFW
-- **Intrusion detection** with fail2ban
-- **System auditing** with auditd
+---
 
-## 🛠 Prerequisites
+## 🧪 Labs Overview
 
-### System Requirements
-- **Ubuntu Server 22.04 LTS** or **Debian 12**
-- **Minimum**: 2 CPU cores, 4GB RAM, 20GB disk space
-- **Recommended**: 4+ CPU cores, 8GB RAM, 50GB disk space
-- **Internet connection** for package downloads
+### 📂 LAB 1: Sistema de Administración Linux con Automatización y Kernel Customizado
+**Level**: 🔴 Advanced | **Duration**: ~12 hours | **Status**: ✅ Complete
 
-### Required Knowledge
-- Basic Linux command line proficiency
+<details>
+<summary><b>🔍 View Lab 1 Details</b></summary>
+
+#### What You'll Build
+- Custom Linux Kernel 6.6.8 compiled from source
+- Custom kernel module for system monitoring
+- Automated backup system with verification
+- Real-time performance monitoring dashboard
+- Complete security hardening setup
+
+#### Skills Gained
+- Kernel compilation and optimization
+- Kernel module development in C
+- Bash scripting for automation
+- Python monitoring applications
+- Security configuration (fail2ban, auditd, AppArmor)
+
+#### Prerequisites
+- Basic Linux command line
 - Understanding of shell scripting
-- Basic networking concepts
-- Familiarity with system administration tasks
+- Familiarity with C programming (basic)
 
-## 🚀 Quick Installation
+#### Certification Alignment
+- 📘 LFD103: A Beginner's Guide to Linux Kernel Development
+- 📗 LFS101: Introduction to Linux
+- 📙 Linux Essentials
+- 📕 Linux Unhatched (versión más básica)
 
-### 1. Clone the Repository
+[📂 Go to Lab 1](./lab1-kernel-customization/)
+
+</details>
+
+---
+
+### 📂 LAB 2: Centro de Soporte IT Completo con Sistema de Tickets y Diagnóstico
+**Level**: 🟡 Intermediate | **Duration**: ~10 hours | **Status**: 🚧 In Progress
+
+<details>
+<summary><b>🔍 View Lab 2 Details</b></summary>
+
+#### What You'll Build
+- IT support ticketing system
+- Hardware diagnostics automation
+- Network troubleshooting toolkit
+- Documentation and knowledge base
+- Remote support infrastructure
+
+#### Skills Gained
+- IT support best practices
+- Hardware troubleshooting
+- Network diagnostics
+- Customer service workflows
+- Documentation systems
+
+#### Prerequisites
+- Basic Linux administration
+- Understanding of networking concepts
+- Hardware fundamentals
+
+#### Certification Alignment
+- 💻 Google IT Support Professional Certificate
+- 🔧 Computer Hardware Basics (subconjunto de IT Support)
+- 🌐 Networking Basics
+
+[📂 Go to Lab 2](./lab2-it-support-center/)
+
+</details>
+
+---
+
+### 📂 LAB 3: Pipeline CI/CD Empresarial con Automatización Completa
+**Level**: 🟡 Intermediate | **Duration**: ~15 hours | **Status**: 📝 Planned
+
+<details>
+<summary><b>🔍 View Lab 3 Details</b></summary>
+
+#### What You'll Build
+- Complete CI/CD pipeline with Jenkins/GitLab
+- Automated testing and deployment
+- Container orchestration with Docker
+- Infrastructure as Code
+- Monitoring and alerting system
+
+#### Skills Gained
+- CI/CD pipeline design and implementation
+- Docker containerization
+- Git workflow management
+- Python automation scripts
+- DevOps best practices
+
+#### Prerequisites
+- Strong Linux fundamentals
+- Basic programming knowledge
+- Git version control
+- Understanding of software development lifecycle
+
+#### Certification Alignment
+- 🔷 IBM DevOps and Software Engineering Professional Certificate
+- 🐍 Google IT Automation with Python Professional Certificate
+- 🐍 Python for Everybody Specialization Certificate (base de las anteriores)
+
+[📂 Go to Lab 3](./lab3-cicd-pipeline/)
+
+</details>
+
+---
+
+### 📂 LAB 4: Sistema de Detección de Intrusiones y Análisis de Vulnerabilidades
+**Level**: 🔴 Advanced | **Duration**: ~18 hours | **Status**: 📝 Planned
+
+<details>
+<summary><b>🔍 View Lab 4 Details</b></summary>
+
+#### What You'll Build
+- Network intrusion detection system (IDS/IPS)
+- Vulnerability scanning automation
+- Security incident response workflow
+- Log analysis and correlation
+- Threat intelligence integration
+
+#### Skills Gained
+- Cybersecurity fundamentals
+- Network security monitoring
+- Vulnerability assessment
+- Incident response
+- Security tool mastery (Snort, Suricata, OSSEC, Wazuh)
+
+#### Prerequisites
+- Strong networking knowledge
+- Linux system administration
+- Basic understanding of security concepts
+- Python scripting
+
+#### Certification Alignment
+- ✅ Google Cybersecurity Professional Certificate
+- 🔒 Microsoft Cybersecurity Analyst Professional Certificate
+- 📚 LFC108: Cybersecurity Essentials (versión básica de las anteriores)
+- ☁️ Google Cloud Cybersecurity Professional Certificate
+- 🔐 Microsoft Azure Security Tools Specialization
+- 🐍 Python for Cybersecurity Specialization Certificate
+- 🛡️ SKF100: Understanding the OWASP Top 10 Security Threats
+
+[📂 Go to Lab 4](./lab4-security-ids/)
+
+</details>
+
+---
+
+### 📂 LAB 5: Plataforma Full Stack de Análisis de Datos con Pipeline ETL
+**Level**: 🔴 Advanced | **Duration**: ~20 hours | **Status**: 📝 Planned
+
+<details>
+<summary><b>🔍 View Lab 5 Details</b></summary>
+
+#### What You'll Build
+- Complete ETL data pipeline
+- Data warehouse with PostgreSQL/MySQL
+- Real-time analytics dashboard
+- Data visualization platform
+- Automated reporting system
+
+#### Skills Gained
+- Data engineering fundamentals
+- ETL pipeline development
+- Database design and optimization
+- Data visualization
+- Analytics platform deployment
+
+#### Prerequisites
+- Strong Python programming
+- SQL database knowledge
+- Linux system administration
+- Understanding of data structures
+
+#### Certification Alignment
+- 🔷 IBM Full Stack Software Developer Professional Certificate
+- 📊 Google Data Analytics Professional Certificate
+- 🔷 IBM Data Engineering Professional Certificate
+- 📈 Basic Proficiency in KNIME Analytics Platform (herramienta específica)
+
+[📂 Go to Lab 5](./lab5-data-pipeline/)
+
+</details>
+
+---
+
+### 📂 LAB 6: Arquitectura Multi-Cloud con Terraform y Microservicios
+**Level**: 🔴🔴 Expert | **Duration**: ~25 hours | **Status**: 📝 Planned
+
+<details>
+<summary><b>🔍 View Lab 6 Details</b></summary>
+
+#### What You'll Build
+- Multi-cloud infrastructure (AWS, Azure, GCP)
+- Microservices architecture
+- Infrastructure as Code with Terraform
+- Kubernetes cluster deployment
+- Service mesh implementation
+- Complete monitoring and observability stack
+
+#### Skills Gained
+- Cloud architecture design
+- Infrastructure as Code (IaC)
+- Kubernetes orchestration
+- Microservices patterns
+- Multi-cloud strategy
+- Site reliability engineering
+
+#### Prerequisites
+- Expert Linux administration
+- Strong DevOps knowledge
+- Container orchestration experience
+- Programming proficiency
+- Networking expertise
+
+#### Certification Alignment
+- ☁️ IBM Cloud Application Development Foundations Specialization Cybersecurity Essentials, IAM, Cryptography, Incident Response
+
+[📂 Go to Lab 6](./lab6-multicloud-architecture/)
+
+</details>
+
+---
+
+## 🚀 Getting Started
+
+### Quick Start
 ```bash
+# Clone the repository
 git clone https://github.com/MikeDMart/linux-labs.git
-cd linux-labs/lab1-kernel-customization
+cd linux-labs
+
+# Choose a lab based on your level
+cd lab1-kernel-customization/  # Start here if you're intermediate+
+cd lab2-it-support-center/     # Start here if you're a beginner
+
+# Follow the README.md in each lab directory
+cat README.md
 ```
 
-### 2. Make Scripts Executable
-```bash
-chmod +x scripts/*.sh
+### Recommended Learning Path
+
+```mermaid
+graph TD
+    A[Start Here] --> B{Your Level?}
+    B -->|Beginner| C[LAB 2: IT Support]
+    B -->|Intermediate| D[LAB 1: Kernel Custom]
+    B -->|Advanced| E[LAB 4: Security IDS]
+    
+    C --> F[LAB 3: CI/CD Pipeline]
+    D --> F
+    F --> G[LAB 4: Security IDS]
+    G --> H[LAB 5: Data Pipeline]
+    H --> I[LAB 6: Multi-Cloud]
+    E --> H
 ```
 
-### 3. Run Initial Setup
-```bash
-sudo ./scripts/system-setup.sh
-```
+---
 
-### 4. Reboot System
-```bash
-sudo reboot
-```
+## ⚙️ Prerequisites
 
-## 📖 Detailed Setup
+### Hardware Requirements
+- **Minimum**: 2 CPU cores, 4GB RAM, 30GB disk
+- **Recommended**: 4+ CPU cores, 8GB+ RAM, 100GB SSD
+- **For Labs 5-6**: 8+ CPU cores, 16GB+ RAM, 200GB SSD
 
-### Phase 1: Base System Configuration (2 hours)
+### Software Requirements
+- **Ubuntu Server 22.04 LTS** or **Debian 12** (recommended)
+- **Alternative**: CentOS Stream, Rocky Linux, AlmaLinux
+- **Virtualization**: VirtualBox, VMware, KVM, or cloud VMs (AWS, Azure, GCP)
 
-#### Step 1.1: System Preparation
-```bash
-# Update system and install essential tools
-sudo apt update && sudo apt upgrade -y
-sudo apt install -y build-essential git vim curl wget \
-  htop iotop sysstat nethogs iftop \
-  python3 python3-pip ansible \
-  strace lsof tcpdump nmap
-```
+### Knowledge Requirements
+- **Basic**: Command line navigation, text editor usage
+- **Intermediate**: Shell scripting, system administration
+- **Advanced**: Programming, networking, security concepts
 
-#### Step 1.2: Run System Setup Script
-```bash
-# Execute the comprehensive setup script
-sudo ./scripts/system-setup.sh
+---
 
-# The script will:
-# - Configure timezone and hostname
-# - Create administrative user
-# - Harden SSH configuration
-# - Setup firewall with UFW
-# - Configure automatic security updates
-# - Optimize system limits and kernel parameters
-# - Install monitoring tools
-```
+## 🗺️ Learning Roadmap
 
-#### Step 1.3: Post-Setup Verification
-```bash
-# Verify SSH configuration
-sudo systemctl restart sshd
-sudo ufw status
+### Phase 1: Foundation (Weeks 1-2)
+- [ ] Complete LAB 2: IT Support Center
+- [ ] Master basic Linux commands
+- [ ] Understand system administration basics
 
-# Check system information
-./scripts/system-info.sh
-```
+### Phase 2: System Mastery (Weeks 3-4)
+- [ ] Complete LAB 1: Kernel Customization
+- [ ] Learn kernel concepts
+- [ ] Practice automation scripting
 
-### Phase 2: Custom Kernel Compilation (4 hours)
+### Phase 3: Development & Automation (Weeks 5-7)
+- [ ] Complete LAB 3: CI/CD Pipeline
+- [ ] Master version control
+- [ ] Build automation skills
 
-#### Step 2.1: Install Build Dependencies
-```bash
-sudo apt install -y build-essential libncurses-dev bison flex \
-  libssl-dev libelf-dev bc dwarves rsync
-```
+### Phase 4: Security Focus (Weeks 8-10)
+- [ ] Complete LAB 4: Security & IDS
+- [ ] Understand threat landscape
+- [ ] Implement security best practices
 
-#### Step 2.2: Compile Custom Kernel
-```bash
-# Run the kernel build script
-sudo ./scripts/kernel-build.sh
+### Phase 5: Data & Scale (Weeks 11-14)
+- [ ] Complete LAB 5: Data Pipeline
+- [ ] Learn data engineering
+- [ ] Master database operations
 
-# This will:
-# - Download kernel source 6.6.8
-# - Apply performance and security optimizations
-# - Compile kernel with all available CPU cores
-# - Install modules and update bootloader
-```
+### Phase 6: Enterprise Architecture (Weeks 15-20)
+- [ ] Complete LAB 6: Multi-Cloud
+- [ ] Design scalable systems
+- [ ] Implement enterprise patterns
 
-#### Step 2.3: Reboot and Verify
-```bash
-sudo reboot
+---
 
-# After reboot, verify new kernel
-uname -r
-# Should show: 6.6.8-custom
-```
+## 📚 Additional Resources
 
-### Phase 3: Kernel Module Development
+### Official Documentation
+- [Linux Kernel Documentation](https://www.kernel.org/doc/html/latest/)
+- [Ubuntu Server Guide](https://ubuntu.com/server/docs)
+- [Red Hat Enterprise Linux Docs](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/)
 
-#### Step 3.1: Compile Monitoring Module
-```bash
-cd kernel-modules
-make
-
-# Verify compilation
-ls -la simple_monitor.ko
-```
-
-#### Step 3.2: Install and Test Module
-```bash
-# Load the module
-sudo insmod simple_monitor.ko
-
-# Verify module is loaded
-lsmod | grep simple_monitor
-
-# Test the monitoring interface
-cat /proc/simple_monitor
-
-# Expected output:
-# === System Monitor ===
-# Memory Usage:
-#   Total RAM: X MB
-#   Used RAM:  X MB
-#   Free RAM:  X MB
-#   Usage:     X%
-```
-
-### Phase 4: Automation & Monitoring Setup (3 hours)
-
-#### Step 4.1: Configure Backup System
-```bash
-# Test backup script
-sudo ./scripts/backup-system.sh
-
-# Configure backup sources (edit script if needed)
-vim scripts/backup-system.sh
-```
-
-#### Step 4.2: Run Performance Monitor
-```bash
-# Install Python dependencies
-pip3 install psutil
-
-# Start real-time monitoring
-python3 scripts/performance-monitor.py
-```
-
-#### Step 4.3: Apply Security Hardening
-```bash
-# Run comprehensive security script
-sudo ./scripts/security-hardening.sh
-
-# This will:
-# - Install and configure fail2ban
-# - Setup auditd for system monitoring
-# - Disable unnecessary services
-# - Configure AppArmor profiles
-# - Set secure file permissions
-```
-
-## 🎮 Usage
-
-### Daily Operations
-
-#### System Monitoring
-```bash
-# Real-time performance dashboard
-python3 scripts/performance-monitor.py
-
-# Quick system info
-./scripts/system-info.sh
-
-# Kernel module monitoring
-cat /proc/simple_monitor
-```
-
-#### Backup Management
-```bash
-# Manual backup
-sudo ./scripts/backup-system.sh
-
-# Check backup logs
-tail -f /var/log/custom/backup-*.log
-
-# Verify backup integrity
-find /opt/backups -name "*.sha256" -exec sha256sum -c {} \;
-```
-
-#### Security Monitoring
-```bash
-# Check fail2ban status
-sudo fail2ban-client status
-
-# View audit logs
-sudo ausearch -m all
-
-# Check system security
-sudo lynis audit system
-```
-
-### Automated Tasks
-
-#### Cron Jobs Setup
-```bash
-# Edit crontab for automated tasks
-sudo crontab -e
-
-# Add the following entries:
-# 0 2 * * * /opt/scripts/backup-system.sh
-# */5 * * * * /opt/scripts/performance-monitor.py --daemon
-# 0 4 * * 0 /opt/scripts/security-hardening.sh --quick
-```
-
-## 📁 Project Structure
-
-```text
-lab1-kernel-customization/
-├── scripts/
-│   ├── system-setup.sh          # Initial system configuration
-│   ├── kernel-build.sh          # Kernel compilation script
-│   ├── backup-system.sh         # Automated backup system
-│   ├── security-hardening.sh    # Security configuration
-│   └── performance-monitor.py   # Real-time monitoring
-├── kernel-modules/
-│   ├── simple_monitor.c         # Kernel module source
-│   ├── Makefile                 # Module build configuration
-│   └── simple_monitor.ko        # Compiled module
-├── docs/
-│   ├── installation.md          # Detailed installation guide
-│   └── troubleshooting.md       # Common issues and solutions
-├── examples/
-│   ├── sysctl.conf.example      # Kernel parameter examples
-│   └── cron-jobs.example        # Automation scheduling examples
-└── screenshots/
-    ├── performance-dashboard.png
-    └── kernel-module-output.png
-```
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-#### Kernel Compilation Fails
-```bash
-# Check available disk space
-df -h /usr/src
-
-# Verify dependencies
-sudo apt install -y libssl-dev libelf-dev bc
-
-# Clean and retry
-cd /usr/src/linux-6.6.8
-make clean
-```
-
-#### Module Loading Issues
-```bash
-# Check kernel version compatibility
-uname -r
-
-# View kernel messages
-dmesg | tail -20
-
-# Verify module dependencies
-modinfo simple_monitor.ko
-```
-
-#### Performance Monitor Errors
-```bash
-# Install required Python packages
-pip3 install --upgrade psutil
-
-# Check Python version
-python3 --version
-
-# Run with debug output
-python3 scripts/performance-monitor.py --verbose
-```
-
-### Log Files
-- System logs: `/var/log/syslog`
-- Backup logs: `/var/log/custom/backup-*.log`
-- Security logs: `/var/log/auth.log`
-- Kernel logs: `dmesg`
-
-## 🔧 Maintenance
-
-### Regular Tasks
-- **Weekly**: Review backup logs and verify integrity
-- **Monthly**: Update system and security patches
-- **Quarterly**: Review and update kernel configuration
-- **Annually**: Perform comprehensive security audit
-
-### Update Procedures
-```bash
-# Update kernel sources
-cd /usr/src/linux-6.6.8
-git pull origin main
-make olddefconfig
-make -j$(nproc)
-sudo make modules_install
-sudo make install
-sudo update-grub
-```
-
-## 📞 Support
-
-### Documentation
-- [Kernel Documentation](https://www.kernel.org/doc/html/latest/)
-- [Linux System Administration Guide](https://tldp.org/LDP/sag/html/)
-- [Bash Scripting Guide](https://www.gnu.org/software/bash/manual/)
+### Learning Platforms
+- [Linux Foundation Training](https://training.linuxfoundation.org/)
+- [Coursera - Linux Courses](https://www.coursera.org/courses?query=linux)
+- [edX - Linux Courses](https://www.edx.org/learn/linux)
 
 ### Community
-- [Linux Questions Forum](https://www.linuxquestions.org/)
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/linux)
-- [Reddit r/linuxadmin](https://www.reddit.com/r/linuxadmin/)
+- [r/linuxadmin](https://www.reddit.com/r/linuxadmin/) - System administration discussions
+- [r/linux](https://www.reddit.com/r/linux/) - General Linux community
+- [Linux Questions](https://www.linuxquestions.org/) - Help and support forum
+- [Stack Overflow - Linux Tag](https://stackoverflow.com/questions/tagged/linux)
+
+### Books
+- "The Linux Command Line" by William Shotts
+- "Linux Bible" by Christopher Negus
+- "How Linux Works" by Brian Ward
+- "UNIX and Linux System Administration Handbook" by Evi Nemeth
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how you can help:
+
+### Ways to Contribute
+- 🐛 Report bugs or issues
+- 💡 Suggest new labs or improvements
+- 📝 Improve documentation
+- 🔧 Submit pull requests with fixes or features
+- ⭐ Star this repository if you find it helpful
+
+### Contribution Guidelines
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the **GNU General Public License v3.0** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🌟 Acknowledgments
+
+- Linux Foundation for educational resources
+- Open source community for tools and documentation
+- All contributors who help improve these labs
 
 ---
 
 <div align="center">
 
-Need help? Check the [troubleshooting section](#-troubleshooting) or create an issue in the repository.
+### 📬 Contact & Support
+
+**Found this helpful?** Give it a ⭐!
+
+**Questions?** Open an issue or start a discussion
+
+**Want to collaborate?** Check the contributing section above
+
+---
 
 **Built with ❤️ for the Linux community**
 
-*"The Linux philosophy is 'Laugh in the face of danger'. Oops. Wrong One. 'Do it yourself'. Yes, that's it." - Linus Torvalds*
+*"Talk is cheap. Show me the code."* - **Linus Torvalds**
+
+![Made with Linux](https://img.shields.io/badge/Made_with-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Powered by Open Source](https://img.shields.io/badge/Powered_by-Open_Source-green?style=for-the-badge)
 
 </div>
