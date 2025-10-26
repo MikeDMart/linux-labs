@@ -1,108 +1,110 @@
-Lab 1: Enterprise Linux System with Kernel Customization & Automation
-<div align="center">
-https://img.shields.io/badge/Kernel-6.6.8_Custom-orange
-https://img.shields.io/badge/Status-Production_Ready-brightgreen
-https://img.shields.io/badge/Level-Advanced-blue
-https://img.shields.io/badge/License-GPLv3-blue
+# Lab 1: Enterprise Linux System with Kernel Customization & Automation
 
-Complete Linux system administration with custom kernel compilation and enterprise automation
+<div align="center">
+
+![Kernel Version](https://img.shields.io/badge/Kernel-6.6.8_Custom-orange)
+![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen)
+![Level](https://img.shields.io/badge/Level-Advanced-blue)
+![License](https://img.shields.io/badge/License-GPLv3-blue)
+
+**Complete Linux system administration with custom kernel compilation and enterprise automation**
+
+[🎯 Overview](#-overview) • [✨ Features](#-features) • [🛠 Prerequisites](#-prerequisites) • [🚀 Quick Start](#-quick-installation) • [📖 Setup Guide](#-detailed-setup) • [🎮 Usage](#-usage) • [📁 Structure](#-project-structure) • [🐛 Troubleshooting](#-troubleshooting)
+
+---
 
 </div>
-📋 Table of Contents
-<div align="center">
-🏠 Overview	⚡ Features	🔧 Prerequisites
-🚀 Quick Installation	📖 Detailed Setup	🎮 Usage
-📁 Project Structure	🐛 Troubleshooting	🔧 Maintenance
-</div>
-🎯 Overview
+
+## 🎯 Overview
+
 This lab provides a complete enterprise-grade Linux system administration solution featuring custom kernel compilation, real-time monitoring, security hardening, and comprehensive automation.
 
-✨ Features
-<div align="center">
-🔧 Core System	⚡ Automation & Monitoring	🔒 Security
-🐧 Custom Kernel 6.6.8
-📟 Kernel Modules
-⚡ Performance Tuning
-🌐 BBR Optimization	📊 Real-time Monitoring
-💾 Automated Backups
-🤖 System Automation
-📝 Comprehensive Logging	🔐 SSH Hardening
-🛡️ Firewall Setup
-🚨 Intrusion Detection
-📋 System Auditing
-</div>
-🔧 Core System
-Custom Linux Kernel 6.6.8 compiled from source
+> 💡 **Perfect for**: System administrators, DevOps engineers, and Linux enthusiasts looking to master kernel customization and enterprise automation.
 
-Kernel module development for system monitoring
+---
 
-Performance optimization with BBR and custom sysctl tuning
+## ✨ Features
 
-Security hardening with fail2ban, auditd, and AppArmor
+### 🔧 Core System
+- **Custom Linux Kernel 6.6.8** compiled from source
+- **Kernel module development** for system monitoring
+- **Performance optimization** with BBR and custom sysctl tuning
+- **Security hardening** with fail2ban, auditd, and AppArmor
 
-⚡ Automation & Monitoring
-Real-time performance monitoring with Python dashboard
+### ⚡ Automation & Monitoring
+- **Real-time performance monitoring** with Python dashboard
+- **Automated backup system** with rotation and verification
+- **System setup automation** with bash scripts
+- **Comprehensive logging** and alerting
 
-Automated backup system with rotation and verification
+### 🔒 Security
+- **SSH hardening** with key-based authentication only
+- **Firewall configuration** with UFW
+- **Intrusion detection** with fail2ban
+- **System auditing** with auditd
 
-System setup automation with bash scripts
+---
 
-Comprehensive logging and alerting
+## 🛠 Prerequisites
 
-🔒 Security
-SSH hardening with key-based authentication only
+### System Requirements
+- **Ubuntu Server 22.04 LTS** or **Debian 12**
+- **Minimum**: 2 CPU cores, 4GB RAM, 20GB disk space
+- **Recommended**: 4+ CPU cores, 8GB RAM, 50GB disk space
+- **Internet connection** for package downloads
 
-Firewall configuration with UFW
+### Required Knowledge
+- Basic Linux command line proficiency
+- Understanding of shell scripting
+- Basic networking concepts
+- Familiarity with system administration tasks
 
-Intrusion detection with fail2ban
+---
 
-System auditing with auditd
+## 🚀 Quick Installation
 
-🛠 Prerequisites
-System Requirements
-Ubuntu Server 22.04 LTS or Debian 12
-
-Minimum: 2 CPU cores, 4GB RAM, 20GB disk space
-
-Recommended: 4+ CPU cores, 8GB RAM, 50GB disk space
-
-Internet connection for package downloads
-
-Required Knowledge
-Basic Linux command line proficiency
-
-Understanding of shell scripting
-
-Basic networking concepts
-
-Familiarity with system administration tasks
-
-🚀 Quick Installation
-1. Clone the Repository
-bash
+### 1. Clone the Repository
+```bash
 git clone https://github.com/MikeDMart/linux-labs.git
 cd linux-labs/lab1-kernel-customization
-2. Make Scripts Executable
-bash
+```
+
+### 2. Make Scripts Executable
+```bash
 chmod +x scripts/*.sh
-3. Run Initial Setup
-bash
+```
+
+### 3. Run Initial Setup
+```bash
 sudo ./scripts/system-setup.sh
-4. Reboot System
-bash
+```
+
+### 4. Reboot System
+```bash
 sudo reboot
-📖 Detailed Setup
-Phase 1: Base System Configuration (2 hours)
-Step 1.1: System Preparation
-bash
+```
+
+---
+
+## 📖 Detailed Setup
+
+### Phase 1: Base System Configuration (2 hours)
+
+<details>
+<summary><b>🔍 Click to expand Phase 1 details</b></summary>
+
+#### Step 1.1: System Preparation
+```bash
 # Update system and install essential tools
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y build-essential git vim curl wget \
   htop iotop sysstat nethogs iftop \
   python3 python3-pip ansible \
   strace lsof tcpdump nmap
-Step 1.2: Run System Setup Script
-bash
+```
+
+#### Step 1.2: Run System Setup Script
+```bash
 # Execute the comprehensive setup script
 sudo ./scripts/system-setup.sh
 
@@ -114,21 +116,35 @@ sudo ./scripts/system-setup.sh
 # - Configure automatic security updates
 # - Optimize system limits and kernel parameters
 # - Install monitoring tools
-Step 1.3: Post-Setup Verification
-bash
+```
+
+#### Step 1.3: Post-Setup Verification
+```bash
 # Verify SSH configuration
 sudo systemctl restart sshd
 sudo ufw status
 
 # Check system information
 ./scripts/system-info.sh
-Phase 2: Custom Kernel Compilation (4 hours)
-Step 2.1: Install Build Dependencies
-bash
+```
+
+</details>
+
+---
+
+### Phase 2: Custom Kernel Compilation (4 hours)
+
+<details>
+<summary><b>🔍 Click to expand Phase 2 details</b></summary>
+
+#### Step 2.1: Install Build Dependencies
+```bash
 sudo apt install -y build-essential libncurses-dev bison flex \
   libssl-dev libelf-dev bc dwarves rsync
-Step 2.2: Compile Custom Kernel
-bash
+```
+
+#### Step 2.2: Compile Custom Kernel
+```bash
 # Run the kernel build script
 sudo ./scripts/kernel-build.sh
 
@@ -137,23 +153,37 @@ sudo ./scripts/kernel-build.sh
 # - Apply performance and security optimizations
 # - Compile kernel with all available CPU cores
 # - Install modules and update bootloader
-Step 2.3: Reboot and Verify
-bash
+```
+
+#### Step 2.3: Reboot and Verify
+```bash
 sudo reboot
 
 # After reboot, verify new kernel
 uname -r
 # Should show: 6.6.8-custom
-Phase 3: Kernel Module Development
-Step 3.1: Compile Monitoring Module
-bash
+```
+
+</details>
+
+---
+
+### Phase 3: Kernel Module Development
+
+<details>
+<summary><b>🔍 Click to expand Phase 3 details</b></summary>
+
+#### Step 3.1: Compile Monitoring Module
+```bash
 cd kernel-modules
 make
 
 # Verify compilation
 ls -la simple_monitor.ko
-Step 3.2: Install and Test Module
-bash
+```
+
+#### Step 3.2: Install and Test Module
+```bash
 # Load the module
 sudo insmod simple_monitor.ko
 
@@ -170,23 +200,37 @@ cat /proc/simple_monitor
 #   Used RAM:  X MB
 #   Free RAM:  X MB
 #   Usage:     X%
-Phase 4: Automation & Monitoring Setup (3 hours)
-Step 4.1: Configure Backup System
-bash
+```
+
+</details>
+
+---
+
+### Phase 4: Automation & Monitoring Setup (3 hours)
+
+<details>
+<summary><b>🔍 Click to expand Phase 4 details</b></summary>
+
+#### Step 4.1: Configure Backup System
+```bash
 # Test backup script
 sudo ./scripts/backup-system.sh
 
 # Configure backup sources (edit script if needed)
 vim scripts/backup-system.sh
-Step 4.2: Run Performance Monitor
-bash
+```
+
+#### Step 4.2: Run Performance Monitor
+```bash
 # Install Python dependencies
 pip3 install psutil
 
 # Start real-time monitoring
 python3 scripts/performance-monitor.py
-Step 4.3: Apply Security Hardening
-bash
+```
+
+#### Step 4.3: Apply Security Hardening
+```bash
 # Run comprehensive security script
 sudo ./scripts/security-hardening.sh
 
@@ -196,10 +240,18 @@ sudo ./scripts/security-hardening.sh
 # - Disable unnecessary services
 # - Configure AppArmor profiles
 # - Set secure file permissions
-🎮 Usage
-Daily Operations
-System Monitoring
-bash
+```
+
+</details>
+
+---
+
+## 🎮 Usage
+
+### Daily Operations
+
+#### System Monitoring
+```bash
 # Real-time performance dashboard
 python3 scripts/performance-monitor.py
 
@@ -208,8 +260,10 @@ python3 scripts/performance-monitor.py
 
 # Kernel module monitoring
 cat /proc/simple_monitor
-Backup Management
-bash
+```
+
+#### Backup Management
+```bash
 # Manual backup
 sudo ./scripts/backup-system.sh
 
@@ -218,8 +272,10 @@ tail -f /var/log/custom/backup-*.log
 
 # Verify backup integrity
 find /opt/backups -name "*.sha256" -exec sha256sum -c {} \;
-Security Monitoring
-bash
+```
+
+#### Security Monitoring
+```bash
 # Check fail2ban status
 sudo fail2ban-client status
 
@@ -228,9 +284,12 @@ sudo ausearch -m all
 
 # Check system security
 sudo lynis audit system
-Automated Tasks
-Cron Jobs Setup
-bash
+```
+
+### Automated Tasks
+
+#### Cron Jobs Setup
+```bash
 # Edit crontab for automated tasks
 sudo crontab -e
 
@@ -238,8 +297,13 @@ sudo crontab -e
 # 0 2 * * * /opt/scripts/backup-system.sh
 # */5 * * * * /opt/scripts/performance-monitor.py --daemon
 # 0 4 * * 0 /opt/scripts/security-hardening.sh --quick
-📁 Project Structure
-text
+```
+
+---
+
+## 📁 Project Structure
+
+```text
 lab1-kernel-customization/
 ├── scripts/
 │   ├── system-setup.sh          # Initial system configuration
@@ -260,10 +324,16 @@ lab1-kernel-customization/
 └── screenshots/
     ├── performance-dashboard.png
     └── kernel-module-output.png
-🐛 Troubleshooting
-Common Issues
-Kernel Compilation Fails
-bash
+```
+
+---
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+#### Kernel Compilation Fails
+```bash
 # Check available disk space
 df -h /usr/src
 
@@ -273,8 +343,10 @@ sudo apt install -y libssl-dev libelf-dev bc
 # Clean and retry
 cd /usr/src/linux-6.6.8
 make clean
-Module Loading Issues
-bash
+```
+
+#### Module Loading Issues
+```bash
 # Check kernel version compatibility
 uname -r
 
@@ -283,8 +355,10 @@ dmesg | tail -20
 
 # Verify module dependencies
 modinfo simple_monitor.ko
-Performance Monitor Errors
-bash
+```
+
+#### Performance Monitor Errors
+```bash
 # Install required Python packages
 pip3 install --upgrade psutil
 
@@ -293,27 +367,26 @@ python3 --version
 
 # Run with debug output
 python3 scripts/performance-monitor.py --verbose
-Log Files
-System logs: /var/log/syslog
+```
 
-Backup logs: /var/log/custom/backup-*.log
+### Log Files
+- System logs: `/var/log/syslog`
+- Backup logs: `/var/log/custom/backup-*.log`
+- Security logs: `/var/log/auth.log`
+- Kernel logs: `dmesg`
 
-Security logs: /var/log/auth.log
+---
 
-Kernel logs: dmesg
+## 🔧 Maintenance
 
-🔧 Maintenance
-Regular Tasks
-Weekly: Review backup logs and verify integrity
+### Regular Tasks
+- **Weekly**: Review backup logs and verify integrity
+- **Monthly**: Update system and security patches
+- **Quarterly**: Review and update kernel configuration
+- **Annually**: Perform comprehensive security audit
 
-Monthly: Update system and security patches
-
-Quarterly: Review and update kernel configuration
-
-Annually: Perform comprehensive security audit
-
-Update Procedures
-bash
+### Update Procedures
+```bash
 # Update kernel sources
 cd /usr/src/linux-6.6.8
 git pull origin main
@@ -322,33 +395,37 @@ make -j$(nproc)
 sudo make modules_install
 sudo make install
 sudo update-grub
-📞 Support
-Documentation
-Kernel Documentation
+```
 
-Linux System Administration Guide
+---
 
-Bash Scripting Guide
+## 📞 Support
 
-Community
-Linux Questions Forum
+### Documentation
+- [Kernel Documentation](https://www.kernel.org/doc/html/latest/)
+- [Linux System Administration Guide](https://tldp.org/LDP/sag/html/)
+- [Bash Scripting Guide](https://www.gnu.org/software/bash/manual/)
 
-Stack Overflow
+### Community
+- [Linux Questions Forum](https://www.linuxquestions.org/)
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/linux)
+- [Reddit r/linuxadmin](https://www.reddit.com/r/linuxadmin/)
 
-Reddit r/linuxadmin
+---
 
 <div align="center">
-Need help? Check the troubleshooting section or create an issue in the repository.
 
-Built with ❤️ for the Linux community
+### 💬 Need Help?
 
-"The Linux philosophy is 'Laugh in the face of danger'. Oops. Wrong One. 'Do it yourself'. Yes, that's it." - Linus Torvalds
+Check the [troubleshooting section](#-troubleshooting) or create an issue in the repository.
 
-https://img.shields.io/badge/Made%2520for-Linux%2520Enthusiasts-FCC624?style=for-the-badge&logo=linux&logoColor=black
+---
 
-</div>
-<div align="center">
-⚡ Ready to master Linux system administration? Start with Phase 1!
-⬆ Back to Top
+**Built with ❤️ for the Linux community**
+
+> *"The Linux philosophy is 'Laugh in the face of danger'. Oops. Wrong One. 'Do it yourself'. Yes, that's it."*  
+> — **Linus Torvalds**
+
+⭐ **Star this repo** if you find it helpful!
 
 </div>
