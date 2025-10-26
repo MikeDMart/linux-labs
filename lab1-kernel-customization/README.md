@@ -1,68 +1,100 @@
-# Lab 1: Enterprise Linux System with Kernel Customization & Automation
-
+Lab 1: Enterprise Linux System with Kernel Customization & Automation
 <div align="center">
+https://img.shields.io/badge/Kernel-6.6.8_Custom-orange
+https://img.shields.io/badge/Status-Production_Ready-brightgreen
+https://img.shields.io/badge/Level-Advanced-blue
+https://img.shields.io/badge/License-GPLv3-blue
 
-![Kernel Version](https://img.shields.io/badge/Kernel-6.6.8_Custom-orange)
-![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen)
-![Level](https://img.shields.io/badge/Level-Advanced-blue)
-![License](https://img.shields.io/badge/License-GPLv3-blue)
-
-**Complete Linux system administration with custom kernel compilation and enterprise automation**
+Complete Linux system administration with custom kernel compilation and enterprise automation
 
 </div>
+📋 Table of Contents
+🎯 Overview
 
-## 📋 Table of Contents
-- [Overview](#-overview)
-- [Features](#-features)
-- [Prerequisites](#-prerequisites)
-- [Quick Installation](#-quick-installation)
-- [Detailed Setup](#-detailed-setup)
-- [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [Troubleshooting](#-troubleshooting)
+✨ Features
 
-## 🎯 Overview
+🛠 Prerequisites
 
+🚀 Quick Installation
+
+📖 Detailed Setup
+
+🎮 Usage
+
+📁 Project Structure
+
+🐛 Troubleshooting
+
+🔧 Maintenance
+
+📞 Support
+
+🎯 Overview
 This lab provides a complete enterprise-grade Linux system administration solution featuring custom kernel compilation, real-time monitoring, security hardening, and comprehensive automation.
 
-## ✨ Features
+✨ Features
+<div align="center">
+🔧 Core System	⚡ Automation & Monitoring	🔒 Security
+• Custom Linux Kernel 6.6.8
+• Kernel module development
+• Performance optimization
+• BBR congestion control	• Real-time performance monitoring
+• Automated backup system
+• System setup automation
+• Comprehensive logging	• SSH hardening
+• Firewall configuration
+• Intrusion detection
+• System auditing
+</div>
+🔧 Core System
+Custom Linux Kernel 6.6.8 compiled from source
 
-### 🔧 Core System
-- **Custom Linux Kernel 6.6.8** compiled from source
-- **Kernel module development** for system monitoring
-- **Performance optimization** with BBR and custom sysctl tuning
-- **Security hardening** with fail2ban, auditd, and AppArmor
+Kernel module development for system monitoring
 
-### ⚡ Automation & Monitoring
-- **Real-time performance monitoring** with Python dashboard
-- **Automated backup system** with rotation and verification
-- **System setup automation** with bash scripts
-- **Comprehensive logging** and alerting
+Performance optimization with BBR and custom sysctl tuning
 
-### 🔒 Security
-- **SSH hardening** with key-based authentication only
-- **Firewall configuration** with UFW
-- **Intrusion detection** with fail2ban
-- **System auditing** with auditd
+Security hardening with fail2ban, auditd, and AppArmor
 
-## 🛠 Prerequisites
+⚡ Automation & Monitoring
+Real-time performance monitoring with Python dashboard
 
-### System Requirements
-- **Ubuntu Server 22.04 LTS** or **Debian 12**
-- **Minimum**: 2 CPU cores, 4GB RAM, 20GB disk space
-- **Recommended**: 4+ CPU cores, 8GB RAM, 50GB disk space
-- **Internet connection** for package downloads
+Automated backup system with rotation and verification
 
-### Required Knowledge
-- Basic Linux command line proficiency
-- Understanding of shell scripting
-- Basic networking concepts
-- Familiarity with system administration tasks
+System setup automation with bash scripts
 
-## 🚀 Quick Installation
+Comprehensive logging and alerting
 
-### 1. Clone the Repository
-```bash
+🔒 Security
+SSH hardening with key-based authentication only
+
+Firewall configuration with UFW
+
+Intrusion detection with fail2ban
+
+System auditing with auditd
+
+🛠 Prerequisites
+System Requirements
+Ubuntu Server 22.04 LTS or Debian 12
+
+Minimum: 2 CPU cores, 4GB RAM, 20GB disk space
+
+Recommended: 4+ CPU cores, 8GB RAM, 50GB disk space
+
+Internet connection for package downloads
+
+Required Knowledge
+Basic Linux command line proficiency
+
+Understanding of shell scripting
+
+Basic networking concepts
+
+Familiarity with system administration tasks
+
+🚀 Quick Installation
+1. Clone the Repository
+bash
 git clone https://github.com/MikeDMart/linux-labs.git
 cd linux-labs/lab1-kernel-customization
 2. Make Scripts Executable
@@ -74,11 +106,10 @@ sudo ./scripts/system-setup.sh
 4. Reboot System
 bash
 sudo reboot
-```
 📖 Detailed Setup
 Phase 1: Base System Configuration (2 hours)
 Step 1.1: System Preparation
-```bash
+bash
 # Update system and install essential tools
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y build-essential git vim curl wget \
@@ -180,11 +211,10 @@ sudo ./scripts/security-hardening.sh
 # - Disable unnecessary services
 # - Configure AppArmor profiles
 # - Set secure file permissions
-```
 🎮 Usage
 Daily Operations
 System Monitoring
-```bash
+bash
 # Real-time performance dashboard
 python3 scripts/performance-monitor.py
 
@@ -223,7 +253,6 @@ sudo crontab -e
 # 0 2 * * * /opt/scripts/backup-system.sh
 # */5 * * * * /opt/scripts/performance-monitor.py --daemon
 # 0 4 * * 0 /opt/scripts/security-hardening.sh --quick
-```
 📁 Project Structure
 text
 lab1-kernel-customization/
@@ -246,12 +275,10 @@ lab1-kernel-customization/
 └── screenshots/
     ├── performance-dashboard.png
     └── kernel-module-output.png
-```
-```
 🐛 Troubleshooting
 Common Issues
 Kernel Compilation Fails
-```bash
+bash
 # Check available disk space
 df -h /usr/src
 
@@ -289,7 +316,7 @@ Backup logs: /var/log/custom/backup-*.log
 Security logs: /var/log/auth.log
 
 Kernel logs: dmesg
-```
+
 🔧 Maintenance
 Regular Tasks
 Weekly: Review backup logs and verify integrity
@@ -301,7 +328,7 @@ Quarterly: Review and update kernel configuration
 Annually: Perform comprehensive security audit
 
 Update Procedures
-```bash
+bash
 # Update kernel sources
 cd /usr/src/linux-6.6.8
 git pull origin main
@@ -310,7 +337,6 @@ make -j$(nproc)
 sudo make modules_install
 sudo make install
 sudo update-grub
-```
 📞 Support
 Documentation
 Kernel Documentation
@@ -333,4 +359,11 @@ Built with ❤️ for the Linux community
 
 "The Linux philosophy is 'Laugh in the face of danger'. Oops. Wrong One. 'Do it yourself'. Yes, that's it." - Linus Torvalds
 
-</div>```
+https://img.shields.io/badge/Made%2520for-Linux%2520Enthusiasts-FCC624?style=for-the-badge&logo=linux&logoColor=black
+
+</div>
+<div align="center">
+⚡ Ready to master Linux system administration? Start with Phase 1!
+⬆ Back to Top
+
+</div>
