@@ -9,42 +9,27 @@ Complete Linux system administration with custom kernel compilation and enterpri
 
 </div>
 📋 Table of Contents
-🎯 Overview
-
-✨ Features
-
-🛠 Prerequisites
-
-🚀 Quick Installation
-
-📖 Detailed Setup
-
-🎮 Usage
-
-📁 Project Structure
-
-🐛 Troubleshooting
-
-🔧 Maintenance
-
-📞 Support
-
+<div align="center">
+🏠 Overview	⚡ Features	🔧 Prerequisites
+🚀 Quick Installation	📖 Detailed Setup	🎮 Usage
+📁 Project Structure	🐛 Troubleshooting	🔧 Maintenance
+</div>
 🎯 Overview
 This lab provides a complete enterprise-grade Linux system administration solution featuring custom kernel compilation, real-time monitoring, security hardening, and comprehensive automation.
 
 ✨ Features
 <div align="center">
 🔧 Core System	⚡ Automation & Monitoring	🔒 Security
-• Custom Linux Kernel 6.6.8
-• Kernel module development
-• Performance optimization
-• BBR congestion control	• Real-time performance monitoring
-• Automated backup system
-• System setup automation
-• Comprehensive logging	• SSH hardening
-• Firewall configuration
-• Intrusion detection
-• System auditing
+🐧 Custom Kernel 6.6.8
+📟 Kernel Modules
+⚡ Performance Tuning
+🌐 BBR Optimization	📊 Real-time Monitoring
+💾 Automated Backups
+🤖 System Automation
+📝 Comprehensive Logging	🔐 SSH Hardening
+🛡️ Firewall Setup
+🚨 Intrusion Detection
+📋 System Auditing
 </div>
 🔧 Core System
 Custom Linux Kernel 6.6.8 compiled from source
